@@ -83,7 +83,7 @@ denotes the trace of a square matrix.
 \caption{One agent locating itself with information from anchors and previous time steps}
 \label{f1}
 \end{figure}
-\section{system model}\label{systemModel}
+\section{System Model}\label{systemModel}
 Consider a cooperative wireless network with one agent and several anchors. The anchors locate the agent at time $t_1,t_2,\dots,t_n$ via distance measurement. Also the agent can determine its position change through speed measurement. The position of the agent at different times can be stacked into a vector $\bm{\theta}=[\bm{p}_1,\dots,\bm{p}_n]^{\mathbf{T}}$.
 
 We use \ac{fim} to evaluate the accuracy of estimation of $\bm{\theta}$~\cite{LimitBound2}. The \ac{fim} takes the following form
@@ -118,7 +118,7 @@ In the following, we focus on the cooperation term $\bm{\mathrm{J}}^\mathrm{C}(\
 investigate how its parameter influences the localization error of agent at one particular time.
 %assume $\bm{\mathrm{J}}^\mathrm{A}(\bm{\theta})$ as identity matrix without loss of generality.
 % and its geometric interpretation
-\section{efficiency of cooperation}\label{efficiency}
+\section{Efficiency of Cooperation}\label{efficiency}
 For any unbiased estimators of the position $\bm{p}_i$, the MSE lower bound is characterized by $\bm{\mathrm{J}}^{-1}_{\mathrm{e}}(\bm{p}_i):=\bm{e}_i^{\textrm{T}}\bm{\mathrm{J}}^{-1}(\bm{\theta})\bm{e}_i$, where
 \begin{equation}
 \bm{e}_i=(\bm{0},\dots,\underbrace{\bm{\mathrm{I}}_2}_{\text{$i$-th item}},\dots,\bm{0})^{\textrm{T}}.
@@ -413,7 +413,7 @@ We can obtain SPEB for the $i$-th node as
 \end{equation}
 which is symmetric and monotonic decreasing about the two variables.
 Therefore, increasing any SII can decrease $M_{1,2,\dots,i}$, thus decreasing the localization error. And the nearer $j$ is to $i$, the more efficient the decreasing effect is. 
-\section{geometric intepretation}\label{geometry}
+\section{Geometric Intepretation}\label{geometry}
 In this section we give a geometric interpretation of our results based on Figure \ref{f1}.
 From \eqref{eq:MM} we notice that information from previous nodes vanishes at next node 
 if $\theta_{i-1}=\theta_{i-2}\pm\frac{\pi}{2}$.
