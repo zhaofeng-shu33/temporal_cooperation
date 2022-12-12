@@ -48,22 +48,22 @@ Cooperative localization, Fisher informaton matrix, Position error bound, Matrix
 \section{Introduction}
 % no \IEEEPARstart
 The acquisition of real-time target position is an important part of application in wireless communication technology. 
-It has wide applications in personal navigation, battlefield surveillance and internet of vehicles\cite{Win2011Network}. 
+It has wide applications in personal navigation, battlefield surveillance and internet of vehicles~\cite{Win2011Network}. 
 For situations where positions of multiple agents are required, 
 cooperative localization technology based on distance measure information between agents can significantly improve the localization accuracy. 
 However, localization error is unavoidable in cooperative localization network 
 and it is a vital topic in this field to investigate the property of localization error bound.
 
 There are many kinds of metric to describe the localization error bound 
-including geometric dilution of precision\cite{6237577}, root mean square error, 
+including geometric dilution of precision~\cite{6237577}, root mean square error, 
 cumulative distribution probability and \ac{fim}. 
-Compared with other metrics, Fisher information matrix is the theoretical limit of localizations\cite{LimitBound2}. 
+Compared with other metrics, Fisher information matrix is the theoretical limit of localizations~\cite{LimitBound2}. 
 There have been many papers investigating the property of localization error bound based on \ac{fim}. 
-It is been shown that the average localization performance of a network is largely determined by the number of agents and the signal metric employed\cite{7887727}. 
-Some geometric interpretations of \ac{fim} decomposition is given and the efficiency of cooperation is analyzed\cite{7962761}. 
+It is been shown that the average localization performance of a network is largely determined by the number of agents and the signal metric employed~\cite{7887727}. 
+Some geometric interpretations of \ac{fim} decomposition is given and the efficiency of cooperation is analyzed~\cite{7962761}. 
 Though the same metric \ac{fim} is employed, different decomposition techniques and interpretations exist. 
-The inverse of \ac{fim} holds only approximately\cite{7887727} 
-and the series expansion is difficult  to analyze\cite{7962761}. In this paper, 
+The inverse of \ac{fim} holds only approximately~\cite{7887727} 
+and the series expansion is difficult  to analyze~\cite{7962761}. In this paper, 
 we propose a novel mathematical method to analyze the cooperation efficiency and give reasonable geometric interpretations. 
 Our results give insight on the relationship between localization error and cooperative information. 
 
@@ -138,7 +138,7 @@ The cooperation between adjacent times increase the \ac{efim} for $\bm{p}_i$ alo
 has two eigenvalues $1$ and $1+M_1\lambda_{i,i-1}$.
 \end{remark}
 The deduction of equation \eqref{eq:efim} is closely related with the decomposition of \ac{fim}, which is a triagonal matrix in our case. 
-The \ac{efim} can be obtained analytically using the technique called backward continued fractions\cite{K2008Explicit}. 
+The \ac{efim} can be obtained analytically using the technique called backward continued fractions~\cite{K2008Explicit}. 
 The analytical solution is derived for scalars and in this paper we extend this method to $2\times 2$ block matrix. 
 This technique requires firstly the LU decomposition of \ac{fim}, which is summarized in the following lemma.
 \begin{lemma}\label{lemma:1}
